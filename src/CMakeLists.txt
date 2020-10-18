@@ -1,11 +1,8 @@
-set(targetName Main)
-project(${targetName})
+set(targetName main)
 
-add_subdirectory(statistics)
-add_subdirectory(utils)
+add_subdirectory(probability)
 
 add_executable(${targetName} main.cpp)
-target_link_libraries(${targetName} Statistics)
-target_link_libraries(${targetName} Utils)
+target_link_libraries(${targetName} probability)
 
 unset(targetName)
